@@ -48,7 +48,7 @@ cooldown_period = timedelta(seconds=10)  # Adjust as needed
 def load_model(model_name: str = "yolov10", model_path: str = ""):
     global selected_model, model_loaded
     if not model_path:
-        model_path = "app/previous_best.pt"  # Set default to 'current_best.pt'
+        model_path = "app/current_best.pt"  # Set default to 'current_best.pt'
     try:
         logger.info(f"Attempting to load model '{model_name}' from path: {model_path}")
         if model_name in ["yolov8", "yolov9", "yolov10"]:
