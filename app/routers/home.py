@@ -21,7 +21,7 @@ async def index(request: Request):
 @router.post("/set_model")
 async def set_model(model: str = Form(...), model_path: Optional[str] = Form(None)):
     if not model_path:
-        model_path = "previous_best.pt"
+        model_path = "app/current_best.pt"
     logger.info(f"Received model: {model}, model_path: {model_path}")
     try:
         models.load_model(model, model_path=model_path)
