@@ -22,9 +22,9 @@ category_dict = {
 }
 
 birdnest_descriptions = {
-    "Grade A Birdnest": "Grade A edible bird nests are of the highest quality...",
-    "Grade B Birdnest": "Grade B edible bird nests are considered mid-tier in quality...",
-    "Grade C Birdnest": "Grade C edible bird nests are of the lowest quality among the three grades.",
+    'Grade A Birdnest': "Grade A edible bird nests are of the highest quality, featuring a clean, off-white color, minimal impurities, and thick, tightly woven strands. These nests often have a perfect cup shape with very few feathers, making them the most sought-after.",
+    'Grade B Birdnest': "Grade B edible bird nests are considered mid-tier in quality, featuring an off-white, light yellow, or slightly greyish color. These nests often contain minor impurities like feathers and dirt, although they are generally clean after washing. The structure of Grade B nests may exhibit slight inconsistencies or imperfections, with the strands not being as thick or tightly woven as those found in higher-grade nests.",
+    'Grade C Birdnest': "Grade C edible bird nests are of the lowest quality among the three grades. These nests may have a yellowish or greyish color and contain more impurities and feathers. The strands are often thinner and less tightly woven, and the nests may have irregular shapes and more visible imperfections.",
     "Unknown": "other objects",
 }
 
@@ -48,7 +48,7 @@ cooldown_period = timedelta(seconds=10)  # Adjust as needed
 def load_model(model_name: str = "yolov10", model_path: str = ""):
     global selected_model, model_loaded
     if not model_path:
-        model_path = "previous_best.pt"  # Set default to 'current_best.pt'
+        model_path = "app/previous_best.pt"  # Set default to 'current_best.pt'
     try:
         logger.info(f"Attempting to load model '{model_name}' from path: {model_path}")
         if model_name in ["yolov8", "yolov9", "yolov10"]:
