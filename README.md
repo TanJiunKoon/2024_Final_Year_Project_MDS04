@@ -5,5 +5,5 @@ Pls check MDS04_User Guides.pdf to install the relevant dependencies and librari
 
 4. Technical Guide is for software installation.
 3. End User Guide shows all the details for each section of the software.
-![Uploading Screenshot 2024-11-26 at 3.15.10 pm.png…]()
+![image alt](https://github.com/TanJiunKoon/2024_Final_Year_Project_MDS04/blob/d836a8014d20ecc56ec49381400f2c2d7b4fdd6f/Interface.jpg)
 
